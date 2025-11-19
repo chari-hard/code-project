@@ -4,3 +4,31 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+:root{
+  --color-primary-black: #000000;
+  --color-primary-white:#FFFFFF;
+  --color-secondary-gray: #E8E8E8;
+  
+  --font-body: "Palanquin", sans-serif;
+  --font-title: "Bebas Neue", sans-serif; font-weight: 400;
+  --font-prize: "Radio Canada Big", sans-serif;
+
+  --font-body-size: 16px ;
+  --font-prize-size: 25px ;
+  --font-discount-size: 10px ;
+  --font-h1-size: 60px ;
+  --font-h2-size: 48px ;
+  --font-h3-size: 28px ;
+  --font-h4-size: 20px ;
+}
+
+.btn-primary {
+  padding: 5px 50px;
+  background-color: var(--color-primary-black);
+  color: var(--color-primary-white);
+  border-radius: 10px;
+  font-family: var(--font-title);
+  font-size: var(--font-h3-size);
+
+}
