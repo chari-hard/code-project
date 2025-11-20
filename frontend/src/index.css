@@ -6,21 +6,36 @@
 }
 
 :root{
+
+/* ----------------- COLORS ----------------- */
+
   --color-primary-black: #000000;
   --color-primary-white:#FFFFFF;
   --color-secondary-gray: #E8E8E8;
+  --color-secondary-dark-gray: #585858;
   
-  --font-body: "Palanquin", sans-serif;
-  --font-title: "Bebas Neue", sans-serif; font-weight: 400;
-  --font-prize: "Radio Canada Big", sans-serif;
+/* ----------------- FONT FAMILIES ----------------- */
 
-  --font-body-size: 16px ;
+  --font-body: "Palanquin", sans-serif;
+  --font-title: "Bebas Neue", sans-serif;
+  --font-prize: "Radio Canada Big";
+
+/* ----------------- SIZES ----------------- */
+
+  --font-body-size: 16px;
   --font-prize-size: 25px ;
   --font-discount-size: 10px ;
   --font-h1-size: 60px ;
   --font-h2-size: 48px ;
   --font-h3-size: 28px ;
   --font-h4-size: 20px ;
+
+/* ----------------- WEIGHTS ----------------- */
+
+  --font-body-weight: 500;
+  --font-prize-weight: 700;
+  --font-title-weight: 400;
+
 }
 
 .btn-primary {
