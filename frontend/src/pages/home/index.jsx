@@ -1,11 +1,12 @@
-import './style.css'
-import { Cardroupas } from  '../../components/CARDS/cardroupas'
-import camisaTeste from '../../assets/images/camisa-outdated.svg'
+import './style.css';
+import { Main } from '../../components/layout/main';
+import { SectionMenu } from '../../components/layout/SectionMenu';
 
 export const Home = () => {
-    return(
-        <>
-            {/* Coloquem aqui seus layouts para testar. */}
-        </>
-    )
-}
+  return (
+    <>
+      <Main />
+      <SectionMenu />
+    </>
+  );
+};

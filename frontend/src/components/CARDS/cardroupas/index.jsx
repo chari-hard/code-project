@@ -1,5 +1,5 @@
 import './style.css'
-import imagemCarrinho from '../../../assets/images/icon-sacola.svg'
+import imagemCarrinho from '../../../assets/images/iconSacola.svg'
 
 export const Cardroupas = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) => {
     return(
