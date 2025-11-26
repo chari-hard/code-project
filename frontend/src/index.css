@@ -39,11 +39,11 @@
 }
 
 .btn-primary {
-  padding: 5px 50px;
+  padding: 5px 80px;
   background-color: var(--color-primary-black);
   color: var(--color-primary-white);
   border-radius: 10px;
   font-family: var(--font-title);
   font-size: var(--font-h3-size);
-
+  text-decoration: none;
 }
