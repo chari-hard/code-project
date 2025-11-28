@@ -5,11 +5,11 @@ import { CardroupasBranco } from '../../CARDS/cardroupas-branco'
 export const SectionInverno = () => {
     return(
 
-        <div className="section-inverno">
+        <section className="section-inverno">
 
             <h2>COLEÇÃO INVERNO</h2>
 
-            <div className="container">
+            <div className="container-inverno">
 
                 <div className="card-camisa">
                     <CardroupasBranco
@@ -45,6 +45,6 @@ export const SectionInverno = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }

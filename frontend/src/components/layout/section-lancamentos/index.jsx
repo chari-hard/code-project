@@ -9,56 +9,63 @@ export const SectionLancamentos = () => {
 
     return (
 
-        <div className='section-lancamentos'>
+        <section className='section-lancamentos'>
 
             <h2>LANÇAMENTOS</h2>
 
-            <div className='container-lancamentos'>
 
-                <div className='card-camisa'>
-                    <Cardroupas
-                    imagemRoupa={ ImagemCamisa }
-                    nomeRoupa= "CAMISA OUTDATED"
-                    descontoRoupa= "99,99"  
-                    precoRoupa= "79,99"                 
-                    />
-                     
+
+            <div className="container-lancamentos">
+
+                <div className='container-camisas'>
+
+                    <div className='card-camisa'>
+                        <Cardroupas
+                            imagemRoupa={ImagemCamisa}
+                            nomeRoupa="CAMISA OUTDATED"
+                            descontoRoupa="99,99"
+                            precoRoupa="79,99"
+                        />
+
+                    </div>
+
+                    <div className='card-camisa'>
+                        <Cardroupas
+                            imagemRoupa={ImagemCamisa2}
+                            nomeRoupa="CAMISETA PAIN"
+                            descontoRoupa="99,99"
+                            precoRoupa="79,99"
+                        />
+
+                    </div>
+
+                    <div className='card-camisa'>
+                        <Cardroupas
+                            imagemRoupa={ImagemCamisa3}
+                            nomeRoupa="CAMISETA RAVE PARTY "
+                            descontoRoupa="99,99"
+                            precoRoupa="79,99"
+                        />
+
+                    </div>
+
+                    <div className='card-camisa'>
+                        <Cardroupas
+                            imagemRoupa={ImagemCamisa4}
+                            nomeRoupa="CAMISA HUMAN ARE GROSS"
+                            descontoRoupa="99,99"
+                            precoRoupa="79,99"
+                        />
+
+                    </div>
+
                 </div>
 
-                <div className='card-camisa'>
-                    <Cardroupas
-                    imagemRoupa={ ImagemCamisa2 }
-                    nomeRoupa= "CAMISETA PAIN"
-                    descontoRoupa= "99,99"  
-                    precoRoupa= "79,99"                 
-                    />
-                     
-                </div>
-
-                <div className='card-camisa'>
-                    <Cardroupas
-                    imagemRoupa={ ImagemCamisa3 }
-                    nomeRoupa= "CAMISETA RAVE PARTY "
-                    descontoRoupa= "99,99"  
-                    precoRoupa= "79,99"                 
-                    />
-                     
-                </div>
-
-                <div className='card-camisa'>
-                    <Cardroupas
-                    imagemRoupa={ ImagemCamisa4 }
-                    nomeRoupa= "CAMISA HUMAN ARE GROSS"
-                    descontoRoupa= "99,99"  
-                    precoRoupa= "79,99"                 
-                    />
-                     
-                </div>
+                <a className='btn-primary' href="">Ver mais</a>
 
             </div>
 
-                <a className='btn-primary' href="">Ver mais</a>
-        </div>
+        </section>
     )
 
 

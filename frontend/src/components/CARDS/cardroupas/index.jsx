@@ -1,5 +1,5 @@
 import './style.css'
-import imagemCarrinho from '../../../assets/images/icon-sacola.svg'
+import imagemCarrinho from '../../../assets/images/iconSacola.svg'
 
 export const Cardroupas = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) => {
     return(
@@ -11,9 +11,9 @@ export const Cardroupas = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) 
                 <div>
                     <p className='nome-roupa'>{nomeRoupa}</p>
 
-                    <div className='prizes-preto'>
-                        <p className='discount-roupa-preto'>R${descontoRoupa}</p>
-                        <p className='prize-roupa-preto'>R${precoRoupa}</p>
+                    <div className='prizes'>
+                        <p className='discount'>R${descontoRoupa}</p>
+                        <p className='prize'>R${precoRoupa}</p>
                     </div>
                 </div>
 

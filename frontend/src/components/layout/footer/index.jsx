@@ -14,7 +14,7 @@ import IconLinkedin from '../../../assets/images/r-icon-linkedin.svg'
 import IconTiktok from '../../../assets/images/r-icon-tiktok.svg'
 
 export const Footer = () => {
-    return(
+    return (
         <footer>
 
             <div className="container-footer">
@@ -22,34 +22,34 @@ export const Footer = () => {
                 <div className="formas-de-pagamento">
                     <h3>FORMAS DE PAGAMENTO</h3>
                     <div className='box-pagamentos'>
-                        <img src={IconMastercard} alt="mastercard"/>
-                        <img src={IconVisa} alt="visa"/>
-                        <img src={IconElo} alt="elo"/>
-                        <img src={IconPix} alt="pix"/>
+                        <img src={IconMastercard} alt="mastercard" />
+                        <img src={IconVisa} alt="visa" />
+                        <img src={IconElo} alt="elo" />
+                        <img src={IconPix} alt="pix" />
                     </div>
                 </div>
 
                 <div className="contato-e-suporte">
                     <h3>SUPORTE E CONTATO</h3>
 
-                    <div className='telefone'> <img src={IconTelefone} alt="telefone"/><h4>4002 - 8922</h4></div>
-                    <div className='whatsapp'> <img src={IconWhatsapp} alt="whatsapp"/><h4>(11) 98881 - 8234</h4></div>
+                    <div className='telefone'> <img src={IconTelefone} alt="telefone" /><h4>4002 - 8922</h4></div>
+                    <div className='whatsapp'> <img src={IconWhatsapp} alt="whatsapp" /><h4>(11) 98881 - 8234</h4></div>
                 </div>
 
 
                 <div className="redes-sociais">
                     <h3>REDES SOCIAIS</h3>
                     <div className='box-redes-sociais'>
-                        <img src={IconInstagram} alt="instagram"/>
-                        <img src={IconFacebook} alt="facebook"/>
-                        <img src={IconLinkedin} alt="linkedin"/>
-                        <img src={IconTiktok} alt="tiktok"/>
+                        <img src={IconInstagram} alt="instagram" />
+                        <img src={IconFacebook} alt="facebook" />
+                        <img src={IconLinkedin} alt="linkedin" />
+                        <img src={IconTiktok} alt="tiktok" />
                     </div>
                 </div>
             </div>
 
-            <p> © 2025 CODE. Todos os direitos reservados.<br/>
-            Este site foi criado como projeto do SENAC. As imagens e elementos visuais foram gerados com inteligência artificial.</p>
+            <p> © 2025 CODE. Todos os direitos reservados.<br />
+                Este site foi criado como projeto do SENAC. As imagens e elementos visuais foram gerados com inteligência artificial.</p>
 
         </footer>
     )

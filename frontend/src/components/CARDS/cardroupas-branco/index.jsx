@@ -3,21 +3,21 @@ import imagemCarrinho from '../../../assets/images/icon-sacola-branca.svg'
 
 export const CardroupasBranco = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) => {
     return(
-        <div className='cardroupa'>
+        <div className='cardroupa-branco'>
             <img src={imagemRoupa} alt={nomeRoupa}/>
 
 
-            <div className='roupa-content'>
+            <div className='roupa-content-branco'>
                 <div>
-                    <p className='nome-roupa'>{nomeRoupa}</p>
+                    <p className='nome-roupa-branco'>{nomeRoupa}</p>
 
-                    <div className='prizes'>
-                        <p className='discount-roupa'>R${descontoRoupa}</p>
-                        <p className='prize-roupa'>R${precoRoupa}</p>
+                    <div className='prizes-branco'>
+                        <p className='discount-roupa-branco'>R${descontoRoupa}</p>
+                        <p className='prize-roupa-branco'>R${precoRoupa}</p>
                     </div>
                 </div>
 
-                <img src={imagemCarrinho} alt="carrinho" />
+                <img src={imagemCarrinho} alt="carrinho branco" />
             </div>
         </div>
     )

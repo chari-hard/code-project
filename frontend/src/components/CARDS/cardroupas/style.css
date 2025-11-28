@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 300px;
 }
 
 .roupa-content img {
@@ -12,36 +11,34 @@
 
 .roupa-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 300px;
-    padding: 5px, 10px;
+    padding: 15px;
 }
 
 .nome-roupa{
-    display: flex;
-    justify-content: end;
     font-family: var(--font-body);
     font-size: var(--font-body-size);
     font-weight: var(--font-body-weight);
 }
 
-.prizes-preto{
+.prizes{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 15px;
 
 }
 
-.prize-roupa-preto{
+.prize{
     font-family: var(--font-prize);
     font-size: var(--font-prize-size);
     font-weight: var(--font-prize-weight);
 }
 
-.discount-roupa-preto {
+.discount {
     font-family: var(--font-prize);
     font-size: var(--font-discount-size);
+    color: var(--color-secondary-dark-gray);
     text-decoration: line-through;
-    color: var(--color-secondary-black);
-
+    padding-top: 5px;
 }
