@@ -1,14 +1,11 @@
-
 import camisaOutdated from '../../assets/images/camisa-outdated.svg'
+import sacolateste from '../../assets/images/SACOLATESTE.svg'
+import { CombinaCom } from '../../components/combinaCom'
 import './style.css'
-
-
 
 export const PageComprar = () => {
     return (
         <>
-
-
             <div className='div-navegacao'>
                 <nav>
                     <p>Página inicial</p>
@@ -18,12 +15,11 @@ export const PageComprar = () => {
             </div>
 
             <section className='section-comprar-conatiner'>
-
                 <img src={camisaOutdated} alt="Camisa Outdated" />
 
                 <div className='container-comprar'>
                     <div className='div-titulo'>
-                        <h2 >CAMISETA OVERSIZED ROSES GOOD VIBES </h2>
+                        <h2>CAMISETA OVERSIZED ROSES GOOD VIBES</h2>
                     </div>
 
                     <div className="box-precos">
@@ -34,13 +30,9 @@ export const PageComprar = () => {
                         <p className="parcelamento">Em até 2x sem juros</p>
                     </div>
 
-
-
                     <div className="container-tamanho-descricao">
-
                         {/* COLUNA ESQUERDA */}
                         <div className="coluna-esquerda">
-
                             {/* TAMANHO */}
                             <div className="tamanho-produto">
                                 <p>Tamanho:</p>
@@ -69,7 +61,6 @@ export const PageComprar = () => {
                             </div>
                         </div>
 
-
                         {/* DESCRIÇÃO */}
                         <div className="descricao-container">
                             <h4>DESCRIÇÃO</h4>
@@ -81,15 +72,9 @@ export const PageComprar = () => {
                         </div>
                     </div>
                 </div>
-
-
             </section>
 
-
-
-
-
+            <CombinaCom />
         </>
     )
-
 }
