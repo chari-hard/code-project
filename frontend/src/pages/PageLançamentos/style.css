@@ -1,0 +1,21 @@
+.linha-de-sessoes {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-secondary-dark-gray);
+}
+
+.linha-de-sessoes a {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    font-family: var(--font-body);
+
+}
+
+.h2-lancamentos {
+    padding: 30px;
+}
+
+.container-section-lancamentos {
+    display: flex;
+    justify-content: space-around;
+}

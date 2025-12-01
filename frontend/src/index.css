@@ -47,3 +47,32 @@
   font-size: var(--font-h3-size);
   text-decoration: none;
 }
+
+
+/* Cardroupas
+                    imagemRoupa={ImagemCamisa}
+                    nomeRoupa="CAMISA OUTDATED"
+                    descontoRoupa="99,99"
+                    precoRoupa="79,99"
+                />
+
+                <Cardroupas
+                    imagemRoupa={ImagemCamisa2}
+                    nomeRoupa="CAMISETA PAIN"
+                    descontoRoupa="99,99"
+                    precoRoupa="79,99"
+                />
+
+                <Cardroupas
+                    imagemRoupa={ImagemCamisa3}
+                    nomeRoupa="CAMISETA RAVE PARTY "
+                    descontoRoupa="99,99"
+                    precoRoupa="79,99"
+                />
+
+                <Cardroupas
+                    imagemRoupa={ImagemCamisa4}
+                    nomeRoupa="CAMISA HUMAN ARE GROSS"
+                    descontoRoupa="99,99"
+                    precoRoupa="79,99"
+                /> */
