@@ -7,40 +7,41 @@ import iconSacola from "../../../assets/images/SACOLATESTE.svg"
 export const Header = () => {
 
     return (
+        <div>
 
-        <>
-
-        <div className="top-line">
+            <div className="top-line">
                 <p>20% OFF</p>
-                
+                <p>20% OFF</p>
+                <p>20% OFF</p>
+                <p>20% OFF</p>
+                <p>20% OFF</p>
             </div>
 
-        <header className="header">
-            
-            <button className="btn-search">
-                <img src={iconLupa} alt="botão de pesquisa" />
-            </button>
+            <header className="header">
 
-            <img src={logoCode} alt=" imagem com a logo" />
+                <button className="btn-search">
+                    <img src={iconLupa} alt="botão de pesquisa" />
+                </button>
 
 
-<div className="btns-kart-profile">
+                <img src={logoCode} alt=" imagem com a logo" />
 
-            <button className="btn-profile">
-                <img src={iconSacola} alt="botão Perfil" />
-            </button>
 
-            <button className="btn-kart">
-                <img src={iconPerfil} alt="botão Carrinho" />
-             </button>
+                <div className="btns-kart-profile">
 
-          
+                    <a className="btn-kart">
+                        <img src={iconSacola} alt="botão de carrinho" />
+                    </a>
 
-</div>
+                    <button className="btn-profile">
+                        <img src={iconPerfil} alt="botão de perfil" />
+                    </button>
 
-        </header>
+                </div>
 
-        </>
+            </header>
+
+        </div>
     )
 
 }

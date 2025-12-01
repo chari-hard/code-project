@@ -12,8 +12,8 @@ export const Cardroupas = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) 
                     <p className='nome-roupa'>{nomeRoupa}</p>
 
                     <div className='prizes'>
-                        <p className='discount-roupa'>R${descontoRoupa}</p>
-                        <p className='prize-roupa'>R${precoRoupa}</p>
+                        <p className='discount'>R${descontoRoupa}</p>
+                        <p className='prize'>R${precoRoupa}</p>
                     </div>
                 </div>
 

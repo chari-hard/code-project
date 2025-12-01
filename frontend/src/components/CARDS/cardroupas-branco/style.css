@@ -1,44 +1,44 @@
-.cardroupa {
+.cardroupa-branco {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.roupa-content img {
+.roupa-content-branco img {
     width: 37px;
     height: 37px;
 }
 
-.roupa-content {
+.roupa-content-branco {
     display: flex;
     justify-content: space-between;
     width: 300px;
     padding: 15px;
 }
 
-.nome-roupa{
+.nome-roupa-branco {
     font-family: var(--font-body);
     font-size: var(--font-body-size);
     font-weight: var(--font-body-weight);
 }
 
-.prizes{
+.prizes-branco {
     display: flex;
     flex-direction: row;
     gap: 15px;
 
 }
 
-.prize{
+.prize-roupa-branco{
     font-family: var(--font-prize);
     font-size: var(--font-prize-size);
     font-weight: var(--font-prize-weight);
 }
 
-.discount {
+.discount-roupa-branco {
     font-family: var(--font-prize);
     font-size: var(--font-discount-size);
-    color: var(--color-secondary-dark-gray);
+    color: var(--color-secondary-gray);
     text-decoration: line-through;
     padding-top: 5px;
 }

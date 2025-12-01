@@ -1,5 +1,4 @@
-import './style.css'
-import { Link } from "react-router-dom";
+import './style.css';
 import menuBermuda from '../../../assets/images/menu-bermudas.svg'
 import menuCalca from '../../../assets/images/menu-calcas.svg'
 import menuCamiseta from '../../../assets/images/menu-camisetas.svg'
@@ -11,10 +10,9 @@ import menuMoletons from '../../../assets/images/menu-moletons.svg'
 export const SectionMenu = () => {
     return (
 
-
         <section className="section-menu">
 
-            <h2 className='titulo-menu'>MENU</h2>
+            <h2>MENU</h2>
 
             <div className="container-menu">
 
