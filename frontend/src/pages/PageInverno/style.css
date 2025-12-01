@@ -1,0 +1,9 @@
+.container-section-inverno{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.h2-inverno {
+    padding: 30px;
+}

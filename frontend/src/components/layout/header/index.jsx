@@ -20,6 +20,7 @@ export const Header = () => {
             <header className="header">
 
                 <button className="btn-search">
+                    
                     <img src={iconLupa} alt="botão de pesquisa" />
                 </button>
 

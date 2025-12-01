@@ -4,6 +4,7 @@ import ImagemCamisa2 from '../../../assets/images/camisa-pain.svg'
 import ImagemCamisa3 from '../../../assets/images/camisa-raveparty.svg'
 import ImagemCamisa4 from '../../../assets/images/camisa-human.svg'
 import { Cardroupas } from '../../CARDS/cardroupas'
+import { Link } from 'react-router-dom'
 
 export const SectionLancamentos = () => {
 
@@ -61,8 +62,8 @@ export const SectionLancamentos = () => {
 
                 </div>
 
-                <a className='btn-primary' href="">Ver mais</a>
-
+                <Link to= '/lancamentos' className='btn-primary'>Ver mais</Link>
+                
             </div>
 
         </section>
