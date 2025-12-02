@@ -12,7 +12,8 @@
   --color-primary-black: #000000;
   --color-primary-white:#FFFFFF;
   --color-secondary-gray: #E8E8E8;
-  --color-secondary-dark-gray: #585858;
+  --color-secondary-medium-gray: #585858;
+  --color-secondary-dark-gray: #1C1C1C;
   
 /* ----------------- FONT FAMILIES ----------------- */
 
@@ -46,33 +47,20 @@
   font-family: var(--font-title);
   font-size: var(--font-h3-size);
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
+.btn-secondary {
+  padding: 5px 80px;
+  color: var(--color-primary-black);
+  background-color: var(--color-primary-white);
+  border-radius: 10px;
+  font-family: var(--font-title);
+  font-size: var(--font-h3-size);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 
-/* Cardroupas
-                    imagemRoupa={ImagemCamisa}
-                    nomeRoupa="CAMISA OUTDATED"
-                    descontoRoupa="99,99"
-                    precoRoupa="79,99"
-                />
-
-                <Cardroupas
-                    imagemRoupa={ImagemCamisa2}
-                    nomeRoupa="CAMISETA PAIN"
-                    descontoRoupa="99,99"
-                    precoRoupa="79,99"
-                />
-
-                <Cardroupas
-                    imagemRoupa={ImagemCamisa3}
-                    nomeRoupa="CAMISETA RAVE PARTY "
-                    descontoRoupa="99,99"
-                    precoRoupa="79,99"
-                />
-
-                <Cardroupas
-                    imagemRoupa={ImagemCamisa4}
-                    nomeRoupa="CAMISA HUMAN ARE GROSS"
-                    descontoRoupa="99,99"
-                    precoRoupa="79,99"
-                /> */
+.btn-primary:hover, .btn-secondary:hover {
+  transform: scale(1.05);
+}

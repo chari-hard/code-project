@@ -1,0 +1,114 @@
+.section-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/images/background.svg');
+    color: var(--color-primary-white);
+}
+
+.card-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 1000px;
+    padding: 30px 30px 5px 30px;
+    border-radius: 20px;
+    background-color: var(--color-secondary-dark-gray);
+}
+
+.botao-de-voltar {
+    transition: 0.2s;
+}
+.botao-de-voltar:hover {
+    transform: scale(1.1);
+}
+
+.placeholder-invisivel {
+    width: 29px;
+    height: 26px;
+}
+
+.box-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.box-login p {
+    font-size: var(--font-body-size);
+    font-weight: var(--font-body-weight);
+    font-family: var(--font-body);
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form h2 {
+    font-size: var(--font-h2-size);
+    font-family: var(--font-title);
+    font-weight: var(--font-title-weight);
+    color: var(--color-primary-white);
+}
+
+.login-form form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-form input {
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 580px;
+    height: 60px;
+}
+
+.login-form input::placeholder {
+    font-size: var(--font-body-size);
+    font-weight: var(--font-body-weight);
+    font-family: var(--font-body);
+    display: flex;
+    justify-content: center;
+}
+
+.box-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.box-senha button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-primary-white);
+    margin-left: 10px;
+    font-size: var(--font-body-size);
+    font-weight: var(--font-body-weight);
+    font-family: var(--font-body);
+}
+
+.box-senha .esqueci-minha-senha:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+.cadastre-se-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastre-se-box {
+    display: flex;
+    flex-direction: column;
+}

@@ -5,22 +5,50 @@ import "./App.css";
 import { Footer } from "./components/layout/footer";
 import { PageComprar } from "./pages/PageComprar";
 import { PageLancamentos } from "./pages/PageLançamentos";
+import { PageLogin } from "./pages/PageLogin";
 
 function App() {
   return (
     <BrowserRouter>
-
-      <Header />
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/comprar" element={<PageComprar />} />
-        <Route path="/lancamentos" element={<PageLancamentos />} />
-      </Routes>
-      
-      <Footer />
+        <Route path="/" element={
+            <>
+              <Header />
+              <Home />
+              <Footer />
+            </>
+          }
+        />
+ 
+        <Route path="/comprar" element={
+            <>
+              <Header />
+              <PageComprar />
+              <Footer />
+            </>
+          }
+        />
+ 
+        <Route path="/lancamentos" element={
+            <>
+              <Header />
+              <PageLancamentos />
+              <Footer />
+            </>
+          }
+        />
 
+        <Route path="/login" element={
+            <PageLogin />
+          }
+        />
+
+ 
+        {/* Página que NÃO terá Header nem Footer */}
+      </Routes>
     </BrowserRouter>
+
+
   );
 }
 

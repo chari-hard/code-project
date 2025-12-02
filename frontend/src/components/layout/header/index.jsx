@@ -3,6 +3,7 @@ import iconLupa from "../../../assets/images/iconlupa.svg"
 import logoCode from "../../../assets/images/logoCode.svg"
 import iconPerfil from "../../../assets/images/iconPerfil.svg"
 import iconSacola from "../../../assets/images/SACOLATESTE.svg"
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
 
@@ -23,8 +24,9 @@ export const Header = () => {
                     <img src={iconLupa} alt="botão de pesquisa" />
                 </button>
 
-
-                <img src={logoCode} alt=" imagem com a logo" />
+                <Link to="./">
+                    <img src={logoCode} alt=" imagem com a logo" />
+                </Link>
 
 
                 <div className="btns-kart-profile">
@@ -33,9 +35,9 @@ export const Header = () => {
                         <img src={iconSacola} alt="botão de carrinho" />
                     </a>
 
-                    <button className="btn-profile">
+                    <Link to="/login" className="btn-profile">
                         <img src={iconPerfil} alt="botão de perfil" />
-                    </button>
+                    </Link>
 
                 </div>
 
