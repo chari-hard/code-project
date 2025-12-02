@@ -10,20 +10,47 @@ import { PageInverno } from "./pages/PageInverno";
 function App() {
   return (
     <BrowserRouter>
-
-      <Header />
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/comprar" element={<PageComprar />} />
-        <Route path="/lancamentos" element={<PageLancamentos />} />
-        <Route path="/colecao-inverno" element={<PageInverno />} />
-      </Routes>
-      
-      <Footer />
+        <Route path="/" element={
+            <>
+              <Header />
+              <Home />
+              <Footer />
+            </>
+          }
+        />
 
+        <Route path="/comprar" element={
+            <>
+              <Header />
+              <PageComprar />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route path="/lancamentos" element={
+            <>
+              <Header />
+              <PageLancamentos />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route path="/colecao-inverno" element={
+            <>
+              <Header />
+              <PageInverno />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Página que NÃO terá Header nem Footer */}
+      </Routes>
     </BrowserRouter>
   );
 }
 
-export default App
+export default App;

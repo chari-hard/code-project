@@ -43,3 +43,8 @@
 .btn-profile {
   background-color: hsla(0, 0%, 100%, 0);
 }
+
+.btn-kart{
+  cursor: pointer;
+  background-color: var(--color-primary-white);
+}

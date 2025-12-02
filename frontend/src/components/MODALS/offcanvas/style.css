@@ -1,0 +1,33 @@
+.modal-do-lado {
+    padding: 0px !important;
+}
+
+.offcanvas {
+    background-color: #fff
+}
+
+.header-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carrinho-com-bola {
+    display: flex;
+    justify-content: start;
+    gap: 27px;
+}
+
+.fechar-canvas {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.footer-canvas {
+}
+
+.subtotal-valor {
+}
