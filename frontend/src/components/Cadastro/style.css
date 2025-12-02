@@ -1,0 +1,121 @@
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo-h2 {
+    font-family: var(--font-title);
+    padding-top: 40px;
+
+}
+
+
+.cadastro-container p {
+    font-family: var(--font-body);
+}
+
+
+
+h3 {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 28px;
+
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+
+
+label {
+    display: flex;
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+}
+
+
+
+.senhas input {
+    width: 245px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+
+}
+
+
+.nome-email input {
+
+    width: 425px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+
+}
+
+.contatos {
+    padding: 40px 0px;
+}
+
+.contatos input {
+    width: 245px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+}
+
+.coluna-endereco input {
+    width: 425px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color-secondary-gray);
+
+}
+
+.cep input {
+    width: 240px;
+    height: 40px;
+}
+
+.numero input {
+    width: 130px;
+    height: 40px;
+
+}
+
+.complemento input {
+    width: 385px;
+    height: 40px;
+}
+
+
+
+.btn-class {
+    padding: 40px 0px;
+
+}
+
+.btn-cadastrar {
+    color: #fff;
+    background-color: #252422;
+    border-radius: 10px;
+    font-family: var(--font-title);
+    font-size: 28px;
+    width: 580px;
+    height: 50px;
+    cursor: pointer;
+
+}

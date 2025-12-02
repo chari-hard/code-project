@@ -1,6 +1,6 @@
 import camisaOutdated from '../../assets/images/camisa-outdated.svg'
 import sacolateste from '../../assets/images/SACOLATESTE.svg'
-import { CombinaCom } from '../../components/combinaCom'
+// import { CombinaCom } from '../../components/combinaCom'
 import './style.css'
 
 export const PageComprar = () => {
@@ -74,7 +74,7 @@ export const PageComprar = () => {
                 </div>
             </section>
 
-            <CombinaCom />
+            {/* <CombinaCom /> */}
         </>
     )
 }
