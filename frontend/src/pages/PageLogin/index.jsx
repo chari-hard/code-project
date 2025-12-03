@@ -69,7 +69,7 @@ export const PageLogin = () => {
 
                     <div className="cadastre-se-box">
                         <p>Não possui uma conta? Cadastre-se agora: </p>
-                        <Link to=""className="btn-secondary">CADASTRE-SE</Link>
+                        <Link to="/cadastro"className="btn-secondary">CADASTRE-SE</Link>
                     </div>
 
                     <p>© 2025 CODE. Todos os direitos reservados.</p>

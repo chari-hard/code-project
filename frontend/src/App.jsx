@@ -7,61 +7,64 @@ import { PageComprar } from "./pages/PageComprar";
 import { PageLancamentos } from "./pages/PageLançamentos";
 import { PageLogin } from "./pages/PageLogin";
 import { PageInverno } from "./pages/PageInverno";
-import { Cadastro } from "./components/Cadastro";
+import { Cadastro } from "./pages/PageCadastro";
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-            <>
-              <Header />
-              <Home />
-              <Footer />
-            </>
-          }
+          <>
+            <Header />
+            <Home />
+            <Footer />
+          </>
+        }
         />
- 
+
         <Route path="/comprar" element={
-            <>
-              <Header />
-              <PageComprar />
-              <Footer />
-            </>
-          }
+          <>
+            <Header />
+            <PageComprar />
+            <Footer />
+          </>
+        }
         />
- 
+
         <Route path="/lancamentos" element={
-            <>
-              <Header />
-              <PageLancamentos />
-              <Footer />
-            </>
-          }
+          <>
+            <Header />
+            <PageLancamentos />
+            <Footer />
+          </>
+        }
         />
         <Route path="/cadastro" element={
-            <>
-              <Header />
-              <Cadastro />
-              <Footer />
-            </>
-          }
+          <>
+            <Header />
+            <Cadastro />
+            <Footer />
+          </>
+        }
         />
 
-<Route path="/colecao-inverno" element={
-    <>
-      <Header />
-      <PageInverno />
-      <Footer />
-    </>
-  }
-/>
+        <Route path="/colecao-inverno" element={
+          <>
+            <Header />
+            <PageInverno />
+            <Footer />
+          </>
+        }
+        />
+
+       
         <Route path="/login" element={
-            <PageLogin />
-          }
+          <PageLogin />
+        }
         />
 
- 
+
         {/* Página que NÃO terá Header nem Footer */}
       </Routes>
     </BrowserRouter>
