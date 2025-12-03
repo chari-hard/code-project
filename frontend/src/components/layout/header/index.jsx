@@ -38,7 +38,7 @@ export const Header = () => {
                     <img src={iconLupa} alt="botão de pesquisa" />
                 </button>
 
-                <Link to="./">
+                <Link to="/">
                     <img src={logoCode} alt=" imagem com a logo" />
                 </Link>
 

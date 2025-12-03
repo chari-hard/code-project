@@ -31,6 +31,9 @@
   justify-content: start;
   background-color: hsla(0, 0%, 100%, 0);
   width: 200px;
+  cursor: pointer;
+  transition: 0.1s;
+
 }
 
 .btns-kart-profile {
@@ -42,9 +45,26 @@
 
 .btn-profile {
   background-color: hsla(0, 0%, 100%, 0);
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 .btn-kart{
   cursor: pointer;
+  transition: 0.1s;
   background-color: var(--color-primary-white);
+}
+
+
+.btn-search:hover{
+  transform: scale(1.05);
+}
+
+
+.btn-kart:hover{
+  transform: scale(1.05);
+}
+
+.btn-profile:hover {
+  transform: scale(1.05);
 }
