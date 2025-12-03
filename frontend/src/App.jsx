@@ -6,6 +6,7 @@ import { Footer } from "./components/layout/footer";
 import { PageComprar } from "./pages/PageComprar";
 import { PageLancamentos } from "./pages/PageLançamentos";
 import { PageLogin } from "./pages/PageLogin";
+import { PageInverno } from "./pages/PageInverno";
 
 function App() {
   return (
@@ -38,6 +39,14 @@ function App() {
           }
         />
 
+<Route path="/colecao-inverno" element={
+    <>
+      <Header />
+      <PageInverno />
+      <Footer />
+    </>
+  }
+/>
         <Route path="/login" element={
             <PageLogin />
           }
@@ -52,4 +61,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
