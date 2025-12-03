@@ -25,3 +25,12 @@
     font-size: var(--font-h2-size);
 
 }
+
+.card-menu {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-menu:hover {
+    transform: scale(1.08);
+}
