@@ -14,7 +14,7 @@
     padding: 40px;
     width: 100%;
     gap: 150px;
-    background-color: var(--color-secondary-dark-gray);
+     background: radial-gradient(circle, #000000 0%, #474747 50%, #000000 100%);
 
 }
 

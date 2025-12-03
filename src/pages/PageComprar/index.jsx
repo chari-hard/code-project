@@ -1,6 +1,8 @@
 import camisaOutdated from '../../assets/images/camisa-outdated.svg'
 import sacolateste from '../../assets/images/SACOLATESTE.svg'
 // import { CombinaCom } from '../../components/combinaCom'
+import { Footer } from '../../components/layout/footer'
+
 import './style.css'
 
 export const PageComprar = () => {
@@ -14,7 +16,7 @@ export const PageComprar = () => {
                 </nav>
             </div>
 
-            <section className='section-comprar-conatiner'>
+            <section className='section-comprar-container'>
                 <img src={camisaOutdated} alt="Camisa Outdated" />
 
                 <div className='container-comprar'>
@@ -48,9 +50,9 @@ export const PageComprar = () => {
                             <div className="quantidade-produto">
                                 <p>Quantidade:</p>
                                 <div className="quantidade-box">
-                                    <button className="btn-quantidade">-</button>
+                                    <button className="btn-qtd-menos">-</button>
                                     <span className="quantidade-valor">1</span>
-                                    <button className="btn-quantidade">+</button>
+                                    <button className="btn-qtd-mais">+</button>
                                 </div>
                             </div>
 
@@ -71,10 +73,15 @@ export const PageComprar = () => {
                             </p>
                         </div>
                     </div>
+
+                    <div className="botoes-container"> <button className="btn-comprar"> Finalizar Comprar</button> <button 
+                    className='btn-carrinho'> <img src={sacolateste} alt="icone de sacola" /> </button> </div>
+
                 </div>
             </section>
 
             {/* <CombinaCom /> */}
+            <Footer/>
         </>
     )
 }

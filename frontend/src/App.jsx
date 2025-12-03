@@ -7,6 +7,7 @@ import { PageComprar } from "./pages/PageComprar";
 import { PageLancamentos } from "./pages/PageLançamentos";
 import { PageLogin } from "./pages/PageLogin";
 import { PageInverno } from "./pages/PageInverno";
+import { Cadastro } from "./components/Cadastro";
 
 function App() {
   return (
@@ -34,6 +35,14 @@ function App() {
             <>
               <Header />
               <PageLancamentos />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/cadastro" element={
+            <>
+              <Header />
+              <Cadastro />
               <Footer />
             </>
           }

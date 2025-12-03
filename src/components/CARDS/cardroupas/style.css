@@ -1,0 +1,44 @@
+.cardroupa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roupa-content img {
+    width: 37px;
+    height: 37px;
+}
+
+.roupa-content {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 15px;
+}
+
+.nome-roupa{
+    font-family: var(--font-body);
+    font-size: var(--font-body-size);
+    font-weight: var(--font-body-weight);
+}
+
+.prizes{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.prize{
+    font-family: var(--font-prize);
+    font-size: var(--font-prize-size);
+    font-weight: var(--font-prize-weight);
+}
+
+.discount {
+    font-family: var(--font-prize);
+    font-size: var(--font-discount-size);
+    color: var(--color-secondary-dark-gray);
+    text-decoration: line-through;
+    padding-top: 5px;
+}
