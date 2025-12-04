@@ -14,8 +14,8 @@
     gap: 150px;
     width: 100%;
     padding: 40px;
-   
-  background: radial-gradient(circle at center, #000000 0%, #403d39 40%, #000000 100%);
+
+    background: radial-gradient(circle at center, #000000 0%, #403d39 40%, #000000 100%);
 }
 
 
@@ -50,24 +50,22 @@
     grid-template-columns: 1fr 1fr;
     width: 100%;
     padding: 20px 0;
-    border: solid 1px #000;
+    border-top: solid 1px #CCC5B9;
+    border-bottom: solid 1px #CCC5B9;
 }
 
 .coluna-esquerda {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid var(--Color-secondary-gray);
-    border-left: none;
+
 }
 
-.coluna-direita .descricao-container {
+.coluna-direita {
     width: 351px;
     height: 207px;
     padding: 25px;
-    border: 1px solid var(--Color-secondary-gray);
-    border-left: none;
-    border-right: none;
+
 }
 
 .descricao-container {
@@ -75,14 +73,14 @@
     color: var(--color-secondary-brown-gray);
     line-height: 30px;
     padding-right: 38px;
-   
+
 }
 
 .descricao-container h4 {
     font-family: var(--font-title);
     font-size: 20px;
     font-weight: 400;
-    color: var(--color-secondary-brown-gray);
+    color: #252422;
     text-align: center;
 }
 
@@ -101,7 +99,7 @@
 
 .preco-antigo {
     font-size: 10px;
-    color: #000;
+    color: #252422;
     text-decoration: line-through;
 }
 
@@ -109,7 +107,7 @@
     font-family: var(--font-title);
     font-size: 48px;
     font-weight: 400;
-    color: #000;
+    color: #252422;
 }
 
 .parcelamento {
@@ -132,15 +130,16 @@
 .tamanho-produto {
     padding-left: 38px;
 }
-.cor-produto{
-     padding-left: 38px;
+
+.cor-produto {
+    padding-left: 38px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 
 }
 
-.quantidade-produto{
+.quantidade-produto {
     padding-left: 38px;
 }
 
@@ -205,23 +204,23 @@
 .btn-comprar {
     width: 279px;
     height: 43px;
-    color: #ffffff;
+    color: #fff;
     font-family: var(--font-title);
     font-size: 20px;
-    background-color: #252432;
+    background-color: #252422;
     border-radius: 5px;
-    
+    cursor: pointer;
+
 }
 
 .btn-carrinho {
-    width: 59px;
-    height: 44px;
-    background-color: var(--Color-secondary-gray);
-    border: 1px solid #CCC5B9;
+    width: 60px;
+    height: 45px;
+    background-color: var(--color-secondary-gray);
+    border: 2px solid #CCC5B9;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;
+
 }
 
 .btn-carrinho img {

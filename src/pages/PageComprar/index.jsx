@@ -1,6 +1,6 @@
 import camisaOutdated from '../../assets/images/camisa-outdated.svg'
 import sacolateste from '../../assets/images/SACOLATESTE.svg'
-// import { CombinaCom } from '../../components/combinaCom'
+import { CombinaCom } from '../../components/combinaCom'
 import { Footer } from '../../components/layout/footer'
 
 import './style.css'
@@ -80,8 +80,8 @@ export const PageComprar = () => {
                 </div>
             </section>
 
-            {/* <CombinaCom /> */}
-            <Footer/>
+            <CombinaCom />
+           
         </>
     )
 }
