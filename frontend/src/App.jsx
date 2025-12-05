@@ -9,6 +9,7 @@ import { PageLogin } from "./pages/PageLogin";
 import { PageInverno } from "./pages/PageInverno";
 import { Cadastro } from "./pages/PageCadastro";
 import { EmblaCarousel } from "./components/carrossel";
+import { Page404 } from "./pages/page404";
 
 
 function App() {
@@ -59,13 +60,16 @@ function App() {
         }
         />
 
-       
+
         <Route path="/login" element={
           <PageLogin />
         }
         />
 
-
+        <Route path="/*" element={
+            <Page404 />
+        }
+        />
         {/* Página que NÃO terá Header nem Footer */}
       </Routes>
     </BrowserRouter>

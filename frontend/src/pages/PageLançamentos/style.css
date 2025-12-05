@@ -20,8 +20,8 @@
 }
 
 .container-section-lancamentos {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     padding: 0px 0px 40px 0px;
 }
