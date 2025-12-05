@@ -7,6 +7,7 @@ import Backdrop from "@mui/material/Backdrop";
 import { Link } from "react-router-dom";
 
 import './style.css'
+import { CombinaCom } from '../../components/layout/combinaCom';
 
 export const PageComprar = () => {
 
@@ -30,7 +31,7 @@ export const PageComprar = () => {
     const tamanhos = ["PP", "P", "M", "G", "GG"];
 
     return (
-        <>
+        <div className='page-comprar'>
             <div className='div-navegacao'>
                 <nav>
                     <p>Página inicial</p>
@@ -104,8 +105,12 @@ export const PageComprar = () => {
                         className='btn-carrinho'> <img src={sacolateste} alt="icone de sacola" /> </button> </div>
 
                 </div>
+
+
             </section>
 
+            <CombinaCom/>
+                                
             <Backdrop
                 open={openAumentarComprar}
                 sx={{
@@ -123,6 +128,6 @@ export const PageComprar = () => {
             >
                 <Alert variant="filled" severity="error">Não é possível diminuir!</Alert>
             </Snackbar>
-        </>
+        </div>
     )
 }
