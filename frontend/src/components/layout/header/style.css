@@ -30,7 +30,7 @@
   display: flex;
   justify-content: start;
   background-color: hsla(0, 0%, 100%, 0);
-  width: 200px;
+  width: 30px;
   cursor: pointer;
   transition: 0.1s;
 

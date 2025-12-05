@@ -1,13 +1,14 @@
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Header } from "./components/layout/header";
-import "./App.css";
 import { Footer } from "./components/layout/footer";
 import { PageComprar } from "./pages/PageComprar";
 import { PageLancamentos } from "./pages/PageLançamentos";
 import { PageLogin } from "./pages/PageLogin";
 import { PageInverno } from "./pages/PageInverno";
 import { Cadastro } from "./pages/PageCadastro";
+import { EmblaCarousel } from "./components/carrossel";
 
 
 function App() {
