@@ -1,11 +1,17 @@
+import { EmblaCarousel } from '../../carrossel';
 import './style.css'
 import bannerMain from '../../../assets/images/banner-main.svg'
 
 export const Main = () => {
 
+    const bannersMain = [
+        bannerMain, bannerMain, bannerMain
+    ];
+
+
     return (
-        <main className='main'>
-            <img src={bannerMain} alt=" Banner main " />
-        </main>
+
+        <EmblaCarousel images={bannersMain} />
+
     )
 }

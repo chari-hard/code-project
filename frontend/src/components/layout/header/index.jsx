@@ -1,17 +1,18 @@
 import './style.css'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Button } from "@mui/material";
 import iconLupa from "../../../assets/images/iconlupa.svg"
 import logoCode from "../../../assets/images/logoCode.svg"
 import iconPerfil from "../../../assets/images/iconPerfil.svg"
 import iconSacola from "../../../assets/images/SACOLATESTE.svg"
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
-import { Button } from "@mui/material";
-import OffCanvasCarrinho from "../../MODALS/offcanvas";
-
+import OffCanvasCarrinho from "../../MODALS/offcanvasCarrinho";
+import OffCanvasPesquisa from '../../MODALS/OffCanvasPesquisa'
 
 
 export const Header = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const [searchOpen, setSearchOpen] = useState(false);
 
     const menuItems = [
         { label: "Home", onClick: () => console.log("Home") },
@@ -32,16 +33,17 @@ export const Header = () => {
 
             <header className="header">
 
-
                 <button className="btn-search">
-
-                    <img src={iconLupa} alt="botão de pesquisa" />
+                    <img
+                        src={iconLupa}
+                        alt="botão de pesquisa"
+                        onClick={() => setSearchOpen(true)}
+                    />
                 </button>
 
                 <Link to="/">
                     <img src={logoCode} alt=" imagem com a logo" />
                 </Link>
-
 
                 <div className="btns-kart-profile">
 
@@ -62,7 +64,11 @@ export const Header = () => {
                 onClose={() => setDrawerOpen(false)}
                 items={menuItems}
             />
-        </div>
-    )
 
-}
+            <OffCanvasPesquisa
+                open={searchOpen}
+                onClose={() => setSearchOpen(false)}
+            />
+        </div>
+    );
+};
