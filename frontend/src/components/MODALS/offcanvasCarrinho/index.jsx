@@ -1,6 +1,6 @@
 import './style.css'
-import React from "react";
 
+import React from "react";
 import { Drawer, List, ListItem, ListItemText } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Tooltip, IconButton } from "@mui/material";
@@ -10,6 +10,7 @@ import Alert from '@mui/material/Alert';
 import Snackbar from "@mui/material/Snackbar";
 import Backdrop from "@mui/material/Backdrop";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import bolapretahehe from "../../../assets/images/bola preta com numero 1.svg"
 import fecharcanvas from "../../../assets/images/x-carrinho.svg"
@@ -28,12 +29,12 @@ const DrawerContent = styled("div")(({ theme }) => ({
 
 export default function OffCanvasCarrinho({ open, onClose, items = [] }) {
     const [openAlert, setOpenAlert] = useState(false);
-    
+
     const mostrarAlertDeErro = (e) => {
         e.preventDefault();
         setOpenAlert(true);
     };
-    
+
     const [contador, setContador] = useState(1)
     const aumentarContador = () => {
         setContador(contador + 1)
@@ -44,7 +45,7 @@ export default function OffCanvasCarrinho({ open, onClose, items = [] }) {
         } else {
             setOpenAlert(true)
         }
-    
+
     }
     return (
         <Drawer anchor="right" open={open} onClose={onClose}>
@@ -96,10 +97,10 @@ export default function OffCanvasCarrinho({ open, onClose, items = [] }) {
 
                         <div className='valor-total'>
                             <h2>SUBTOTAL</h2>
-                            <h2>R$99,99</h2>
+                            <h2 className='h2-valor-total'>R$99,99</h2>
                         </div>
 
-                        <button className='btn-primary'> FINALIZAR COMPRA</button>
+                        <Link to= "/login" className='btn-primary' >FINALIZAR COMPRA</Link>
 
                     </div>
 

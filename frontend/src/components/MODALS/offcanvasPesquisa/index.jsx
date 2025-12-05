@@ -1,4 +1,5 @@
 import  './style.css'
+
 import Drawer from "@mui/material/Drawer";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
@@ -15,7 +16,7 @@ import ImagemCamisa2 from "../../../assets/images/camisa-pain.svg";
 
 const DrawerContent = styled("div")({
     padding: 16,
-    width: 300,
+    width: 400,
 });
 
 const produtosDoSite = [
@@ -41,16 +42,16 @@ export default function OffCanvasPesquisa({ open, onClose }) {
                     componentsProps={{
                         clearIndicator: {
                             sx: {
-                                color: 'black', // Muda para preto
-                                cursor: 'pointer', // Muda o cursor para mãozinha
+                                color: 'black',
+                                cursor: 'pointer',
                                 '&:hover': {
-                                    color: 'darkgray', // Cor no hover
+                                    color: 'darkgray',
                                 },
                             },
                         },
                     }}
                     renderOption={(props, option) => (
-                        <ListItem {...props} key={option.nomeRoupa}>
+                        <ListItem className='container-foto-nome-pesquisa' {...props} key={option.nomeRoupa}>
                             <ListItemAvatar>
                                 <Avatar
                                     src={option.imagemRoupa}
