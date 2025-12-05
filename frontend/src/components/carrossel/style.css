@@ -1,10 +1,19 @@
 .embla {
   overflow: hidden;
+  margin: auto;
+  --slide-spacing: 1rem;
 }
+
 .embla__container {
   display: flex;
 }
+
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+
+.embla_image{
+  width: 100%;
+  height: auto;
 }
