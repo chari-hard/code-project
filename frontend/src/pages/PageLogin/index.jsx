@@ -26,57 +26,58 @@ export const PageLogin = () => {
                     <img src={BotaoDeVoltar} alt="botâo de retornar" />
                 </Link>
 
-                <div className="box-login">
-                    <Link to="/" className="logo code">
-                        <img src={LogoCodeBranco} alt="logo Code branco" />
-                    </Link>
+                <div>
+                    <div className="box-login">
+                        <Link to="/" className="logo code">
+                            <img src={LogoCodeBranco} alt="logo Code branco" />
+                        </Link>
 
-                    <div className="login-form">
-                        <h2>FAÇA SEU LOGIN</h2>
-                        <form>
-                            <div class="box-email">
-                                <input type="text" placeholder="E-MAIL :" />
-                            </div>
+                        <div className="login-form">
+                            <h2>FAÇA SEU LOGIN</h2>
+                            <form>
+                                <div class="box-email">
+                                    <input type="text" placeholder="E-MAIL :" />
+                                </div>
 
-                            <div className="box-senha">
-                                <input type="password" placeholder="SENHA :" />
-                            <button className="esqueci-minha-senha" onClick={mostrarAlertDeErro}>Esqueci minha senha</button>
-                            </div>
+                                <div className="box-senha">
+                                    <input type="password" placeholder="SENHA :" />
+                                    <button className="esqueci-minha-senha" onClick={mostrarAlertDeErro}>Esqueci minha senha</button>
+                                </div>
 
 
-                            <button type="submit" className="btn-secondary" onClick={mostrarAlertDeErro}>ENTRAR</button>
+                                <button type="submit" className="btn-secondary" onClick={mostrarAlertDeErro}>ENTRAR</button>
 
-                            <Backdrop
-                                open={open}
-                                sx={{
-                                    color: '#fff',
-                                    zIndex: 1300,
-                                    backgroundColor: "rgba(0,0,0,0.7)"
-                                }}
-                            />
+                                <Backdrop
+                                    open={open}
+                                    sx={{
+                                        color: '#fff',
+                                        zIndex: 1300,
+                                        backgroundColor: "rgba(0,0,0,0.7)"
+                                    }}
+                                />
 
-                            <Snackbar
-                                open={open}
-                                autoHideDuration={3000}
-                                onClose={() => setOpen(false)}
-                                anchorOrigin={{ vertical: "top", horizontal: "center" }}
-                            >
-                                <Alert variant="filled" severity="error">Você nem tem conta seu mentiroso</Alert>
-                            </Snackbar>
-                        </form>
+                                <Snackbar
+                                    open={open}
+                                    autoHideDuration={3000}
+                                    onClose={() => setOpen(false)}
+                                    anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                                >
+                                    <Alert variant="filled" severity="error">Você nem tem conta seu mentiroso</Alert>
+                                </Snackbar>
+                            </form>
+                        </div>
+
+
+                        <div className="cadastre-se-box">
+                            <p>Não possui uma conta? Cadastre-se agora: </p>
+                            <Link to="/cadastro" className="btn-secondary">CADASTRE-SE</Link>
+                        </div>
+
+                        <p>© 2025 CODE. Todos os direitos reservados.</p>
                     </div>
 
-
-                    <div className="cadastre-se-box">
-                        <p>Não possui uma conta? Cadastre-se agora: </p>
-                        <Link to="/cadastro"className="btn-secondary">CADASTRE-SE</Link>
-                    </div>
-
-                    <p>© 2025 CODE. Todos os direitos reservados.</p>
+                    <div className="placeholder-invisivel"></div>
                 </div>
-
-                <div className="placeholder-invisivel"></div>
-
             </div>
 
         </section>

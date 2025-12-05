@@ -30,10 +30,12 @@
   display: flex;
   justify-content: start;
   background-color: hsla(0, 0%, 100%, 0);
-  width: 30px;
+  width: 200px;
+}
+
+.btn-search img {
   cursor: pointer;
   transition: 0.1s;
-
 }
 
 .btns-kart-profile {
@@ -56,7 +58,7 @@
 }
 
 
-.btn-search:hover{
+.btn-search img:hover{
   transform: scale(1.05);
 }
 

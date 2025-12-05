@@ -7,10 +7,7 @@
     color: var(--color-primary-white);
 }
 
-.card-login {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+.card-login {    
     width: 1000px;
     padding: 30px 30px 5px 30px;
     border-radius: 20px;
@@ -67,6 +64,7 @@
 }
 
 .login-form input {
+    font-size: var(--font-body-size);
     padding-left: 20px;
     border-radius: 10px;
     width: 580px;
