@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .roupa-content-branco img {
@@ -29,7 +31,7 @@
 
 }
 
-.prize-roupa-branco{
+.prize-roupa-branco {
     font-family: var(--font-prize);
     font-size: var(--font-prize-size);
     font-weight: var(--font-prize-weight);
@@ -41,4 +43,9 @@
     color: var(--color-secondary-gray);
     text-decoration: line-through;
     padding-top: 5px;
+}
+
+.cardroupa-branco:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 0px 60px 10px #00000034;
 }
