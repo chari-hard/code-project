@@ -3,37 +3,40 @@
     justify-content: center;
     gap: 100px;
     margin-bottom: 22px;
+    background-color: #fff;
     font-family: var(--font-body);
     font-size: var(--font-body-size);
-    background-color: rgb(255, 255, 255);
 }
 
-.section-comprar-conatiner {
+.div-navegacao nav p {
+    width: 91px;
+    text-align: center;
+}
+
+.section-comprar-container {
     display: flex;
     justify-content: center;
-    padding: 40px;
-    width: 100%;
     gap: 150px;
-     background: radial-gradient(circle, #000000 0%, #474747 50%, #000000 100%);
+    width: 100%;
+    padding: 40px;
 
+    background: radial-gradient(circle at center, #000000 0%, #403d39 40%, #000000 100%);
 }
 
-.section-comprar-conatiner img {
-    width: 461px;
-    height: 692px;
-    border-radius: 10px;
 
-}
 
 .container-comprar {
-    background: #FFFFFF;
     display: flex;
     flex-direction: column;
     gap: 35px;
     width: 667px;
-    height: 623px;
+    background: #fff;
+}
 
-
+.section-comprar-container img {
+    width: 461px;
+    height: 692px;
+    border-radius: 10px;
 }
 
 .div-titulo {
@@ -43,13 +46,50 @@
     width: 100%;
     height: 116px;
     background-color: #e8e8e8;
-
     font-family: var(--font-title);
-    font-size: 22px;
+    font-size: var(--font-h4-size);
 }
 
+.container-tamanho-descricao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 20px 0;
+    border-top: solid 1px #CCC5B9;
+    border-bottom: solid 1px #CCC5B9;
+}
 
-/*  ÁREA DE PREÇOS  */
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0px 0px 0px 40px;
+
+}
+
+.coluna-direita {
+    width: 351px;
+    height: 207px;
+    padding: 25px;
+
+}
+
+.descricao-container {
+    font-family: var(--font-body);
+    color: var(--color-secondary-brown-gray);
+    line-height: 30px;
+    padding-right: 38px;
+
+}
+
+.descricao-container h4 {
+    font-family: var(--font-title);
+    font-size: 20px;
+    font-weight: 400;
+    color: #252422;
+    text-align: center;
+}
+
 .box-precos {
     display: flex;
     flex-direction: column;
@@ -57,31 +97,24 @@
     margin-right: 150px;
 }
 
-
-
 .linha-preco {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-
-
 .preco-antigo {
     font-size: 10px;
-    color: #000;
+    color: #252422;
     text-decoration: line-through;
 }
-
-
 
 .preco-novo {
     font-family: var(--font-title);
     font-size: 48px;
     font-weight: 400;
-    color: #000;
+    color: #252422;
 }
-
 
 .parcelamento {
     margin-top: -10px;
@@ -91,3 +124,112 @@
 }
 
 
+
+.tamanho-produto,
+.quantidade-produto,
+.cor-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.cor-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.tamanho-produto p,
+.quantidade-produto p,
+.cor-produto p {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-secondary-brown-gray);
+}
+
+
+.btn-qtd-menos,
+.btn-qtd-mais,
+.quantidade-valor {
+    width: 28px;
+    height: 33px;
+    border: 1px solid var(--color-secondary-brown-gray);
+    font-family: var(--font-body);
+    color: var(--color-secondary-brown-gray);
+    text-align: center;
+    border: 1px solid #403d39;
+    cursor: pointer;
+}
+
+
+.quantidade-box {
+    display: flex;
+}
+
+
+
+.cor-produto {
+    width: 155px;
+}
+
+.cor-unica {
+    width: 28px;
+    height: 28px;
+    background: #000;
+    border-radius: 100%;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+.btn-comprar {
+    width: 279px;
+    height: 43px;
+    color: #fff;
+    font-family: var(--font-title);
+    font-size: 20px;
+    background-color: #252422;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-carrinho {
+    width: 60px;
+    height: 45px;
+    background-color: var(--color-secondary-gray);
+    border: 2px solid #CCC5B9;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn-carrinho img {
+    width: 22px;
+    height: 22px;
+}
+
+.tamanho-produto-container {
+  display: flex;
+  gap: 10px;
+}
+
+.botao-tamanho {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-tamanho.selecionado {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
