@@ -3,6 +3,8 @@ import menuBermuda from '../../../assets/images/menu-bermudas.svg'
 import menuCalca from '../../../assets/images/menu-calcas.svg'
 import menuCamiseta from '../../../assets/images/menu-camisetas.svg'
 import menuMoletons from '../../../assets/images/menu-moletons.svg'
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -12,25 +14,23 @@ export const SectionMenu = () => {
 
         <section className="section-menu">
 
-            <h2>MENU</h2>
-
             <div className="container-menu">
 
-                <div to="/bermudas" className="card-menu">
+                <Link to="/bermudas" className="card-menu">
                     <img src={menuBermuda} alt="imagem de uma bermuda" />
-                </div>
+                </Link>
 
-                <div to="/camisetas" className="card-menu">
+                <Link to="/camisetas" className="card-menu">
                     <img src={menuCamiseta} alt="imagem de uma camisa" />
-                </div>
+                </Link>
 
-                <div to="/calcas" className="card-menu">
+                <Link to="/calcas" className="card-menu">
                     <img src={menuCalca} alt="imagem de uma calca" />
-                </div>
+                </Link>
 
-                <div to="/moletons" className="card-menu">
+                <Link to="/moletons" className="card-menu">
                     <img src={menuMoletons} alt="imagem de um moleton" />
-                </div>
+                </Link>
 
 
             </div>

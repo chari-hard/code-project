@@ -29,6 +29,7 @@
     justify-content: end;
     padding: 15px;
     cursor: pointer;
+<<<<<<< HEAD:frontend/src/components/MODALS/offcanvas/style.css
 }
 
 
@@ -105,3 +106,6 @@
     justify-content: space-between;
     gap: 120px;
 }
+=======
+}
+>>>>>>> 5c5e3f32beaec96c6da4b3734f0cf950a46102d9:frontend/src/components/MODALS/offcanvasCarrinho/style.css

@@ -4,6 +4,13 @@
     align-items: center;
     transition: 0.3s;
     cursor: pointer;
+<<<<<<< HEAD
+=======
+}
+
+.cardroupa-branco:hover {
+    transform: scale(1.05);
+>>>>>>> 5c5e3f32beaec96c6da4b3734f0cf950a46102d9
 }
 
 .roupa-content-branco img {
