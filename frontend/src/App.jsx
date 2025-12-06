@@ -4,17 +4,23 @@ import { Home } from "./pages/home";
 import { Header } from "./components/layout/header";
 import { Footer } from "./components/layout/footer";
 import { PageComprar } from "./pages/PageComprar";
-import { PageLancamentos } from "./pages/PageLançamentos";
 import { PageLogin } from "./pages/PageLogin";
-import { PageInverno } from "./pages/PageInverno";
 import { Cadastro } from "./pages/PageCadastro";
-import { EmblaCarousel } from "./components/carrossel";
 import { Page404 } from "./pages/page404";
+import { PageMenuBermudas } from "./pages/PageMenuBermudas";
+import { PageMenuMoletons } from "./pages/PageMenuMoletons";
+import { PageMenuCamisetas } from "./pages/PageMenuCamisetas";
+import { PageMenuCalcas } from "./pages/PageMenuCalcas";
+import ScrollToTop from "./components/scrolltop/ScrollToTop";
+
 
 
 function App() {
   return (
     <BrowserRouter>
+    
+      <ScrollToTop/>
+
       <Routes>
         <Route path="/" element={
           <>
@@ -34,14 +40,6 @@ function App() {
         }
         />
 
-        <Route path="/lancamentos" element={
-          <>
-            <Header />
-            <PageLancamentos />
-            <Footer />
-          </>
-        }
-        />
         <Route path="/cadastro" element={
           <>
             <Header />
@@ -51,10 +49,34 @@ function App() {
         }
         />
 
-        <Route path="/colecao-inverno" element={
+        <Route path="/bermudas" element={
           <>
             <Header />
-            <PageInverno />
+            <PageMenuBermudas />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/camisetas" element={
+          <>
+            <Header />
+            <PageMenuCamisetas />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/moletons" element={
+          <>
+            <Header />
+            <PageMenuMoletons />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/calcas" element={
+          <>
+            <Header />
+            <PageMenuCalcas />
             <Footer />
           </>
         }

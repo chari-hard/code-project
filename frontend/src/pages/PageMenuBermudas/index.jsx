@@ -38,19 +38,19 @@ const listaDeRoupas = [
     }
 ]
 
-export const PageLancamentos = () => {
+export const PageMenuBermudas = () => {
 
     return (
-        <>
+        <div className='page-menu'>
             <div className='linha-de-sessoes'>
-                <Link to= "/">Página inicial</Link>
-                <Link to= "/ofertas">Ofertas</Link>
-                <Link to= "/colecao-inverno">Coleção de inverno</Link>
+                <Link to= "/#menu">Menu</Link>
+                <Link to= "/#ofertas">Ofertas</Link>
+                <Link to= "/#inverno">Coleção de inverno</Link>
             </div>
 
-            <h2 className='h2-lancamentos'>Lançamentos</h2>
+            <h2>BERMUDAS</h2>
 
-            <div className='container-section-lancamentos'>
+            <div className='container-page-menu'>
 
                 {listaDeRoupas.map(({ imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa }) => (
                     <Cardroupas
@@ -65,7 +65,7 @@ export const PageLancamentos = () => {
             </div>
 
 
-        </>
+        </div>
     )
 
 }
