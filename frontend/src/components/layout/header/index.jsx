@@ -1,7 +1,6 @@
 import './style.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { Button } from "@mui/material";
 import iconLupa from "../../../assets/images/iconlupa.svg"
 import logoCode from "../../../assets/images/logoCode.svg"
 import iconPerfil from "../../../assets/images/iconPerfil.svg"
@@ -58,6 +57,13 @@ export const Header = () => {
                 </div>
 
             </header>
+
+            <nav className='linha-de-sessoes'>
+                <Link to= "/#lancamentos">Lançamentos</Link>
+                <Link to= "/#menu">Menu</Link>
+                <Link to= "/#ofertas">Ofertas</Link>
+                <Link to= "/#inverno">Coleção de inverno</Link>
+            </nav>
 
             <OffCanvasCarrinho
                 open={drawerOpen}

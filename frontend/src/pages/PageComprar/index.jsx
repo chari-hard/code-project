@@ -32,13 +32,6 @@ export const PageComprar = () => {
 
     return (
         <div className='page-comprar'>
-            <div className='div-navegacao'>
-                <nav>
-                    <p>Página inicial</p>
-                    <p>Ofertas</p>
-                    <p>Coleção</p>
-                </nav>
-            </div>
 
             <section className='section-comprar-container'>
                 <img src={camisaOutdated} alt="Camisa Outdated" />

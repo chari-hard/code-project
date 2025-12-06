@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 export const SectionMenu = () => {
     return (
 
-        <section className="section-menu">
+        <section className="section-menu" id='menu'>
 
             <div className="container-menu">
 

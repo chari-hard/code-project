@@ -3,11 +3,12 @@ import BannerDesconto from '../../../assets/images/banner-desconto.svg'
 import ImagemCamisa from '../../../assets/images/camisa-outdated.svg'
 import { Cardroupas } from '../../CARDS/cardroupas'
 
+
 export const SectionOfertas = () => {
 
     return (
 
-        <section className='section-ofertas'>
+        <section className='section-ofertas' id='ofertas'>
 
             <img src={BannerDesconto} alt="" />
 

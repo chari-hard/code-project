@@ -42,11 +42,6 @@ export const PageMenuCalcas = () => {
 
     return (
         <div className='page-menu'>
-            <div className='linha-de-sessoes'>
-                <Link to= "/#menu">Menu</Link>
-                <Link to= "/#ofertas">Ofertas</Link>
-                <Link to= "/#inverno">Coleção de inverno</Link>
-            </div>
 
             <h2>CALÇAS</h2>
 

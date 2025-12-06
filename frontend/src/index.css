@@ -68,21 +68,6 @@
 
 /*-----------------------STYLE DAS PÁGINAS DE ROUPAS-----------------------*/
 
-
-.linha-de-sessoes {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--color-secondary-dark-gray);
-}
-
-.linha-de-sessoes a {
-    color: var(--color-primary-white);
-    text-decoration: none;
-    width: 132px;
-    text-align: center;
-    font-family: var(--font-body);
-}
-
 .page-menu h2 {
     display: flex;
     justify-content: center;

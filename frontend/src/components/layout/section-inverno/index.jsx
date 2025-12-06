@@ -1,48 +1,57 @@
 import './style.css'
-import ImagemCamisa from '../../../assets/images/camisa-outdated.svg'
+import ImagemMoletomAthena from '../../../assets/images/moletons-athenas.svg'
+import ImagemMoletomBlessed1 from '../../../assets/images/moletons-blessedcolor.svg'
+import ImagemMoletomBlessed2 from '../../../assets/images/moletons-blessed-dark.svg'
+import ImagemMoletomWorldwide from '../../../assets/images/moletons-worldwide.svg'
 import { CardroupasBranco } from '../../CARDS/cardroupas-branco'
 
-export const SectionInverno = () => {
-    return(
+const listaDeRoupas = [
+    {
+        imagemRoupa:  ImagemMoletomAthena,
+        nomeRoupa: "MOLETOM ATHENA",
+        descontoRoupa: "199,99",
+        precoRoupa: "159,99"
+    },
 
-        <section className="section-inverno">
+    {
+        imagemRoupa:  ImagemMoletomWorldwide,
+        nomeRoupa: "MOLETOM WORLDWIDE",
+        descontoRoupa: "199,99",
+        precoRoupa: "159,99"
+    },
+
+    {
+        imagemRoupa:  ImagemMoletomBlessed1 ,
+        nomeRoupa: "MOLETOM BLESSED COLOR",
+        descontoRoupa: "199,99",
+        precoRoupa: "159,99"
+    },
+
+    {
+        imagemRoupa:  ImagemMoletomBlessed2 ,
+        nomeRoupa: "MOLETOM BLESSED",
+        descontoRoupa: "199,99",
+        precoRoupa: "159,99"
+    }
+]
+
+export const SectionInverno = () => {
+    return (
+
+        <section className="section-inverno" id='inverno'>
 
             <h2>COLEÇÃO INVERNO</h2>
 
             <div className="container-inverno">
 
-                <div className="card-camisa">
+                {listaDeRoupas.map(({ imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa }) => (
                     <CardroupasBranco
-                        imagemRoupa = {ImagemCamisa}
-                        nomeRoupa = "CAMISA teste"
-                        descontoRoupa = "99,99"
-                        precoRoupa = "79,99"
+                        imagemRoupa={imagemRoupa}
+                        nomeRoupa={nomeRoupa}
+                        descontoRoupa={descontoRoupa}
+                        precoRoupa={precoRoupa}
                     />
-                </div>
-                <div className="card-camisa">
-                    <CardroupasBranco
-                        imagemRoupa = {ImagemCamisa}
-                        nomeRoupa = "CAMISA OUTDATED"
-                        descontoRoupa = "99,99"
-                        precoRoupa = "79,99"
-                    />
-                </div>
-                <div className="card-camisa">
-                    <CardroupasBranco
-                        imagemRoupa = {ImagemCamisa}
-                        nomeRoupa = "CAMISA OUTDATED"
-                        descontoRoupa = "99,99"
-                        precoRoupa = "79,99"
-                    />
-                </div>
-                <div className="card-camisa">
-                    <CardroupasBranco
-                        imagemRoupa = {ImagemCamisa}
-                        nomeRoupa = "CAMISA OUTDATED"
-                        descontoRoupa = "99,99"
-                        precoRoupa = "79,99"
-                    />
-                </div>
+                ))}
 
             </div>
         </section>

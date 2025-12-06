@@ -70,3 +70,21 @@
 .btn-profile:hover {
   transform: scale(1.05);
 }
+
+.linha-de-sessoes {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-secondary-dark-gray);
+}
+
+.linha-de-sessoes a {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    width: 132px;
+    text-align: center;
+    font-family: var(--font-body);
+    transition: 0.2s;
+}
+.linha-de-sessoes a:hover {
+    transform: scale(1.06);
+}
