@@ -5,7 +5,9 @@
     transition: 0.3s;
     cursor: pointer;
     width: fit-content;
-  margin: 0 auto;
+    margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
 }
 
 .cardroupa:hover {
@@ -57,10 +59,11 @@
 @media (max-width: 480px) {
 
 
-    .cardroupa{
+    .cardroupa {
         width: 200px;
         height: 371px;
     }
+
     .imagem-roupa {
         width: 200px;
     }

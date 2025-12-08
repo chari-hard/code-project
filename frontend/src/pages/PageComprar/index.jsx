@@ -4,12 +4,16 @@ import sacolateste from '../../assets/images/SACOLATESTE.svg'
 import Alert from '@mui/material/Alert';
 import Snackbar from "@mui/material/Snackbar";
 import Backdrop from "@mui/material/Backdrop";
+import { useLocation} from 'react-router-dom'
 import { Link } from "react-router-dom";
 
 import './style.css'
 import { CombinaCom } from '../../components/layout/combinaCom';
 
 export const PageComprar = () => {
+
+    const location = useLocation ();
+    const {imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa } = location.state || {};
 
     const [openAumentarComprar, setOpenAumentarComprar] = useState(false);
 
@@ -43,8 +47,8 @@ export const PageComprar = () => {
 
                     <div className="box-precos">
                         <div className="linha-preco">
-                            <p className="preco-antigo">R$ 99,99</p>
-                            <h2 className="preco-novo">R$ 79,99</h2>
+                            <p className="preco-antigo">R$ 99,99"</p>
+                            <h2 className="preco-novo"> R$ 79,99" </h2>
                         </div>
                         <p className="parcelamento">Em até 2x sem juros</p>
                     </div>
