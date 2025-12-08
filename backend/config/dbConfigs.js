@@ -1,55 +1,29 @@
-const ProdutoModels = require("../models/produtoModels")
-
-class adminController {
-
-    static async listarProdutos(req, res) {// nosso get!!!!!!
-        const produtos = await ProdutoModels.findAll()
-        res.json(produtos)
-    }
-
-    static async cadastrarProduto(req, res) {
-        try {
-            const { nome, valor } = req.body
-
-            const novoProduto = await ProdutoModels.create({ nome, valor })
-
-            res.json({ message: "produto cadastrado com sucesso", dados: novoProduto })
-        } catch (err) {
-            res.json({ message: "falha ao cadastrar produto!" })
+const sequelize = require('sequelize')
+const conexao = new sequelize('defaultdb','avnadmin','AVNS_m2XIC6mFs8Og-BVP00k',{
+    host:'mysql-284aac54-juliocgdlima-8a90.g.aivencloud.com',
+    port: 10379,
+    dialect:'mysql',
+    dialectOptions: {
+        ssl:{
+            require: true,
+            rejectUnauthorized: false
         }
+    },
+    logging: false
+})
+
+
+
+async function testarConexao() {
+    try{
+        await conexao.authenticate()
+        console.log("Sucesso")
+    } catch(err){
+        console.log("ERRO")
     }
+} 
 
-    static async alterarProduto (req, res) {
-        try {
+testarConexao()
 
-            const id = req.params.id
-            const novoProduto = req.body
-            const produtoSelecionado = await ProdutoModels.findByPk(id)
-            const produtoAlterado = await produtoSelecionado.update(novoProduto)
+module.exports = conexao
 
-            res.json({ message: "Música alterada com sucesso", dados: produtoAlterado })
-
-        } catch (err) {
-            res.json({ message: "Não foi possível alterar a música" })
-        }
-    }
-
-    static async deletarProduto(req, res) {
-        try{
-
-            const id = req.params.id
-            const produtoSelecionado = await ProdutoModels.findByPk(id)
-            await produtoSelecionado.destroy()
-            res.json({message: "Música deletada com sucesso"})
-            
-        }catch(err){
-            res.json({message: "Não foi possivel deletar a música"})
-
-        }
-    }
-
-
-
-}
-
-module.exports = adminController
