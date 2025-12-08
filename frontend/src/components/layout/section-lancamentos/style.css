@@ -35,3 +35,14 @@
     font-size: var(--font-h3-size);
     text-decoration: none;
 }
+
+@media (max-width: 480px) { 
+    .section-lancamentos {
+        padding: 30px;
+    }
+
+    .container-camisas {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

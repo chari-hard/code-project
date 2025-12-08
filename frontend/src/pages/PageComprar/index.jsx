@@ -31,13 +31,13 @@ export const PageComprar = () => {
 
     return (
         <>
-            <div className='div-navegacao'>
+            {/* <div className='div-navegacao'>
                 <nav>
-                    <p>Página inicial</p>
-                    <p>Ofertas</p>
-                    <p>Coleção</p>
+                <Link to= "/">Página inicial</Link>
+                <Link to= "/ofertas">Ofertas</Link>
+                <Link to= "/colecao-inverno">Coleção de inverno</Link>
                 </nav>
-            </div>
+            </div> */}
 
             <section className='section-comprar-container'>
                 <img src={camisaOutdated} alt="Camisa Outdated" />
@@ -100,9 +100,9 @@ export const PageComprar = () => {
                         </div>
                     </div>
 
-                    <div className="botoes-container"> <Link to ="/login"className="btn-primary"> Finalizar Comprar</Link> <button
-                        className='btn-carrinho'> <img src={sacolateste} alt="icone de sacola" /> </button> </div>
+                    <div className="botoes-container"> <Link to="/login" className="btn-primary"> Finalizar Comprar</Link>
 
+                        <button className='btn-carrinho'> <img src={sacolateste} alt="icone de sacola" /> </button> </div>
                 </div>
             </section>
 

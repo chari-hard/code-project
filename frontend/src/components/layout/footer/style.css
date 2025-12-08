@@ -90,3 +90,23 @@ footer p {
     display: flex;
     gap: 10px;
 }
+
+@media (max-width: 480px) {
+    footer {
+        padding: 30px;
+        gap: 70px;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .formas-de-pagamento,
+    .contato-e-suporte,
+    .redes-sociais {
+        width: 100%;
+        align-items: center;
+    }
+}

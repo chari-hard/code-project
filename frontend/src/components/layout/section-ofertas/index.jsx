@@ -9,7 +9,7 @@ export const SectionOfertas = () => {
 
         <section className='section-ofertas'>
 
-            <img src={BannerDesconto} alt="" />
+            <img className='banner-desconto' src={BannerDesconto} alt="" />
 
             <div className='containter-ofertas-h2'>
 

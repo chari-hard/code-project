@@ -68,3 +68,10 @@
 .btn-profile:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 480px) {
+  .header {
+  gap: 40px;
+  padding: 15px;
+  }
+}

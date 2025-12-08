@@ -19,3 +19,15 @@
     font-size: var(--font-h2-size);
     font-weight: var(--font-title-weight);
 }
+
+@media (max-width: 480px) {
+    .section-inverno {
+        padding: 30px 0px;
+    }
+
+    .container-inverno {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

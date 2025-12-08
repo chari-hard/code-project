@@ -27,3 +27,30 @@
     position: relative;
     display: inline-block;
 }
+
+@media (max-width: 480px) {
+
+    .section-ofertas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 30px;
+    }
+    
+    .banner-desconto{
+        width: 350px;
+    }
+
+    .container-ofertas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container-ofertas img {
+        width: 200px;
+    }
+}

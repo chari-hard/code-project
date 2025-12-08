@@ -14,7 +14,7 @@ export const SectionInverno = () => {
                 <div className="card-camisa">
                     <CardroupasBranco
                         imagemRoupa = {ImagemCamisa}
-                        nomeRoupa = "CAMISA teste"
+                        nomeRoupa = "CAMISA OUTDATED"
                         descontoRoupa = "99,99"
                         precoRoupa = "79,99"
                     />

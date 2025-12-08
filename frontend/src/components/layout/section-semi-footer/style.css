@@ -32,3 +32,23 @@
     font-size: var(--font-body-weight);
     line-height: 20px;
 }
+
+@media (max-width: 480px) {
+
+    .section-semifooter {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 20px;
+        padding: 20px 40px 10px 4px
+    }
+
+    .section-semifooter  {
+        width:400px;
+    }
+
+    .section-semifooter img {
+        width: 30px;
+        height: 30px;
+    }
+}
