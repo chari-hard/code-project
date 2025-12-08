@@ -6,9 +6,6 @@ import menuMoletons from '../../../assets/images/menu-moletons.svg'
 import { Link } from 'react-router-dom';
 
 
-
-
-
 export const SectionMenu = () => {
     return (
 

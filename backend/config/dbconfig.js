@@ -23,7 +23,6 @@ async function testarConexao() {
         console.log("Não deu certo, moio")
     }
 }
-
 testarConexao()
 
 module.exports = conexao
