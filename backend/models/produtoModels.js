@@ -1,20 +1,24 @@
 const conexao = require('../config/dbConfigs') // impotando a conexao
-const {DataTypes} = require('sequelize') // 
+const { DataTypes } = require('sequelize') // 
 
 //MODELANDO A TABELA
 
 const Produtos = conexao.define('produtos', {
-    id:{
+    id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true // 
     },
-    nome:{
+
+    nome: {
         type: DataTypes.STRING,
     },
-    valor:{
+    imagem: {
+        type: DataTypes.STRING
+    },
+    valor: {
         type: DataTypes.FLOAT
-    } 
+    }
 })
 
 // 'sync' Execulta o model e monta no banco de dados

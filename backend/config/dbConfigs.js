@@ -1,6 +1,6 @@
 const sequelize = require('sequelize')
-const conexao = new sequelize('defaultdb','avnadmin','AVNS_m2XIC6mFs8Og-BVP00k',{
-    host:'mysql-284aac54-juliocgdlima-8a90.g.aivencloud.com',
+const conexao = new sequelize('defaultdb','avnadmin','AVNS_x1OcaM36aI354ix2SzV',{
+    host:'code-project-juliocgdlima-8a90.c.aivencloud.com',
     port: 10379,
     dialect:'mysql',
     dialectOptions: {
@@ -11,7 +11,6 @@ const conexao = new sequelize('defaultdb','avnadmin','AVNS_m2XIC6mFs8Og-BVP00k',
     },
     logging: false
 })
-
 
 
 async function testarConexao() {
