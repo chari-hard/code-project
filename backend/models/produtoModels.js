@@ -1,4 +1,4 @@
-const conexao = require('../config/dbConfig') // impotando a conexao
+const conexao = require('../config/dbConfigs') // impotando a conexao
 const {DataTypes} = require('sequelize') // 
 
 //MODELANDO A TABELA
