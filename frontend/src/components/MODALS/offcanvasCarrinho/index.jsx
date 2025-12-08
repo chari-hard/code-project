@@ -96,7 +96,7 @@ export default function OffCanvasCarrinho({ open, onClose, items = [] }) {
                     <div className='footer-canvas'>
 
                         <div className='valor-total'>
-                            <h2>SUBTOTAL</h2>
+                            <h2 className='subtotal'>SUBTOTAL</h2>
                             <h2 className='h2-valor-total'>R$99,99</h2>
                         </div>
 

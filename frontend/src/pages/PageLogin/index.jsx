@@ -28,7 +28,7 @@ export const PageLogin = () => {
 
                 <div>
                     <div className="box-login">
-                        <Link to="/" className="logo code">
+                        <Link to="/" className="logo-code">
                             <img src={LogoCodeBranco} alt="logo Code branco" />
                         </Link>
 
@@ -76,7 +76,6 @@ export const PageLogin = () => {
                         <p>© 2025 CODE. Todos os direitos reservados.</p>
                     </div>
 
-                    <div className="placeholder-invisivel"></div>
                 </div>
             </div>
 

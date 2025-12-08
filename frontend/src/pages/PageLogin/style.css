@@ -7,7 +7,7 @@
     color: var(--color-primary-white);
 }
 
-.card-login {    
+.card-login {
     width: 1000px;
     padding: 30px 30px 5px 30px;
     border-radius: 20px;
@@ -17,6 +17,7 @@
 .botao-de-voltar {
     transition: 0.2s;
 }
+
 .botao-de-voltar:hover {
     transform: scale(1.1);
 }
@@ -109,4 +110,46 @@
 .cadastre-se-box {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .card-login {
+        width: 95%;
+    }
+
+
+
+    .botao-de-voltar img {
+        width: 22px;
+        height: auto;
+    }
+
+    .box-login {
+        gap: 60px;
+    }
+
+    .logo-code img {
+        width: 160px;
+        height: auto;
+    }
+
+
+    .login-form form {
+        gap: 15px;
+    }
+
+    .login-form input {
+        width: 320px;
+        height: 40px;
+    }
+
+    .box-senha {
+        gap: 0px;
+    }
+
+    .btn-secondary {
+        display: flex;
+        justify-content: center;
+        padding: 5px 50px;
+    }
 }

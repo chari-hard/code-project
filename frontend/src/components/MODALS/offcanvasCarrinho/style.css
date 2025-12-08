@@ -117,3 +117,9 @@
 .h2-valor-total{
     text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+    .valor-total {
+        gap: 60px;
+    }
+}

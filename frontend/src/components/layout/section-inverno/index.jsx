@@ -15,14 +15,14 @@ const listaDeRoupas = [
 
     {
         imagemRoupa:  ImagemMoletomWorldwide,
-        nomeRoupa: "MOLETOM WORLDWIDE",
+        nomeRoupa: "MOLETOM WORLD",
         descontoRoupa: "199,99",
         precoRoupa: "159,99"
     },
 
     {
         imagemRoupa:  ImagemMoletomBlessed1 ,
-        nomeRoupa: "MOLETOM BLESSED COLOR",
+        nomeRoupa: "MOLETOM BLESSED C.",
         descontoRoupa: "199,99",
         precoRoupa: "159,99"
     },

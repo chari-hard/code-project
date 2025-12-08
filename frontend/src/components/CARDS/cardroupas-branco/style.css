@@ -4,13 +4,10 @@
     align-items: center;
     transition: 0.3s;
     cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 .cardroupa-branco:hover {
     transform: scale(1.05);
->>>>>>> 5c5e3f32beaec96c6da4b3734f0cf950a46102d9
 }
 
 .roupa-content-branco img {
@@ -55,4 +52,33 @@
 .cardroupa-branco:hover {
     transform: scale(1.07);
     box-shadow: 0px 0px 60px 10px #00000034;
+}
+
+@media (max-width: 480px) {
+
+
+    .cardroupa-branco{
+        width: 200px;
+        height: auto;
+    }
+    .imagem-roupa-branco {
+        width: 200px;
+    }
+
+    .roupa-content-branco img {
+        width: 30px;
+    }
+
+    .roupa-content-branco {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .nome-roupa-branco {
+        font-size: 14px;
+    }
+
+    .prize-roupa-branco {
+        font-size: 20px;
+    }
 }

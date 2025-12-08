@@ -94,9 +94,9 @@ export const PageComprar = () => {
                         </div>
                     </div>
 
-                    <div className="botoes-container"> <Link to ="/login"className="btn-primary"> Finalizar Comprar</Link> <button
-                        className='btn-carrinho'> <img src={sacolateste} alt="icone de sacola" /> </button> </div>
+                    <div className="botoes-container"> <Link to="/login" className="btn-primary"> Finalizar Comprar</Link>
 
+                        <button className='btn-carrinho'> <img src={sacolateste} alt="icone de sacola" /> </button> </div>
                 </div>
 
 

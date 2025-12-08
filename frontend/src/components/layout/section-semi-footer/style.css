@@ -32,3 +32,10 @@
     font-size: var(--font-body-weight);
     line-height: 20px;
 }
+
+@media (max-width: 480px) {
+
+    .section-semifooter {
+        display: none;
+    }
+}

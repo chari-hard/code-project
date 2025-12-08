@@ -88,3 +88,15 @@
 .linha-de-sessoes a:hover {
     transform: scale(1.06);
 }
+@media (max-width: 480px) {
+  .header {
+  gap: 40px;
+  padding: 5px 15px;
+  }
+  .linha-de-sessoes a{
+    font-size: 14px;
+}
+  .top-line {
+    display: none;
+  }
+}

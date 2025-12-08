@@ -32,7 +32,7 @@ const listaDeRoupas = [
 
     {
         imagemRoupa:  ImagemCamisaHuman ,
-        nomeRoupa: "CAMISA HUMAN ARE GROSS",
+        nomeRoupa: "CAMISA HUMAN",
         descontoRoupa: "99,99",
         precoRoupa: "79,99"
     }

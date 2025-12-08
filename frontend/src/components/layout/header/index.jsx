@@ -62,7 +62,7 @@ export const Header = () => {
                 <Link to= "/#lancamentos">Lançamentos</Link>
                 <Link to= "/#menu">Menu</Link>
                 <Link to= "/#ofertas">Ofertas</Link>
-                <Link to= "/#inverno">Coleção de inverno</Link>
+                <Link to= "/#inverno">Inverno</Link>
             </nav>
 
             <OffCanvasCarrinho

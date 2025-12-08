@@ -4,7 +4,7 @@ import imagemCarrinho from '../../../assets/images/iconSacola.svg'
 export const Cardroupas = ({imagemRoupa, nomeRoupa, descontoRoupa, precoRoupa}) => {
     return(
         <div className='cardroupa'>
-            <img src={imagemRoupa} alt={nomeRoupa}/>
+            <img src={imagemRoupa} alt={nomeRoupa} className='imagem-roupa'/>
 
 
             <div className='roupa-content'>
