@@ -1,5 +1,6 @@
 import './style.css';
 import virouLostMidia from '../../assets/images/virou-lost-midia.svg';
+import { Link } from 'react-router-dom';
  
 export const Page404 = () => {
     return (
@@ -15,7 +16,9 @@ export const Page404 = () => {
                             </g></g>
                     </svg>
                     <h1>page not found</h1>
-                    <img src={virouLostMidia} alt="" className='virou-lost-midia' />
+                    <Link to="/">
+                    <img src={virouLostMidia} alt=" imagem com a logo" className='virou-lost-midia' />
+                </Link>
                 </div>
  
                 <svg aria-labelledby="Starry sky" alt="Starry sky" className="starry-sky">
